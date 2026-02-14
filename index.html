@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private</title>
+
+    <!-- Prevent search engines -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #aaa;
+        }
+
+        input {
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 8px;
+            border: none;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: white;
+            color: black;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🔒 Private Memory</h1>
+    <p>Enter our special date</p>
+
+    <input type="password" id="pass" placeholder="DDMMYYYY">
+    <button onclick="check()">Unlock</button>
+
+    <script>
+        function check() {
+            var password = document.getElementById("pass").value;
+
+            if(password === "04082024") {   // 🔥 CHANGE THIS
+                window.location.href = "home.html";
+            } else {
+                alert("Wrong password ❤️");
+            }
+        }
+    </script>
+
+</body>
+</html>
