@@ -3,7 +3,7 @@
 <head>
     <title>Private</title>
 
-    <!-- Prevent search engines -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
 
     <style>
@@ -12,62 +12,72 @@
             height: 100vh;
             background: black;
             color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
-            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 350px;
         }
 
         h1 {
-            font-size: 40px;
+            font-size: 28px;
             margin-bottom: 10px;
         }
 
         p {
             color: #aaa;
+            font-size: 14px;
         }
 
         input {
-            padding: 12px;
+            width: 100%;
+            padding: 14px;
             margin-top: 20px;
-            border-radius: 8px;
+            border-radius: 12px;
             border: none;
-            text-align: center;
             font-size: 16px;
+            text-align: center;
         }
 
         button {
-            padding: 12px 25px;
+            width: 100%;
+            padding: 14px;
             margin-top: 15px;
             border: none;
-            border-radius: 8px;
+            border-radius: 12px;
             background: white;
             color: black;
             font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
         }
 
-        button:hover {
-            background: #444;
-            color: white;
+        button:active {
+            transform: scale(0.98);
         }
     </style>
 </head>
 
 <body>
 
-    <h1>🔒 Private Memory</h1>
-    <p>Enter our special date</p>
+    <div class="container">
+        <h1>🔒 Just Us</h1>
+        <p>Enter our special date</p>
 
-    <input type="password" id="pass" placeholder="DDMMYYYY">
-    <button onclick="check()">Unlock</button>
+        <input type="password" id="pass" placeholder="DDMMYYYY">
+        <button onclick="check()">Unlock</button>
+    </div>
 
     <script>
         function check() {
             var password = document.getElementById("pass").value;
 
-            if(password === "04082024") {   // 🔥 CHANGE THIS
+            if(password === "04082024") {   // CHANGE THIS
                 window.location.href = "home.html";
             } else {
                 alert("Wrong password ❤️");
