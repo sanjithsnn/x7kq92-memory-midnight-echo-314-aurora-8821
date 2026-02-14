@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Beautiful Girl</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #000000, #1a1a1a);
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            font-size: 15px;
+            color: #ccc;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding-bottom: 10px;
+        }
+
+        .gallery img {
+            width: 85%;
+            max-width: 320px;
+            border-radius: 18px;
+            scroll-snap-align: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+        }
+
+        .gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        button {
+            width: 100%;
+            max-width: 320px;
+            padding: 14px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 14px;
+            background: white;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+
+        #extra {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ff4d6d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hi My Minnu Mol❤️</h1>
+
+    <div class="message">
+        Every picture of you is my favorite memory.
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="gallery">
+        <img src="ph1.jpg">
+        <img src="ph2.jpg">
+        <img src="ph3.jpg">
+        <img src="ph4.jpg">
+        <img src="ph5.jpg">
+        <img src="ph6.jpg">
+        <img src="ph7.jpg">
+        <img src="ph8.jpg">
+    </div>
+
+    <button onclick="showLove()">Tap Here</button>
+
+    <button onclick="openLetter()">Read Something Special 💌</button>
+
+    <div id="extra"></div>
+
+    <script>
+        function showLove() {
+            document.getElementById("extra").innerHTML =
+            "You are my favorite person in every universe ❤️";
+        }
+
+        function openLetter() {
+            window.location.href = "letter.html";
+        }
+    </script>
+
+</body>
+</html>
