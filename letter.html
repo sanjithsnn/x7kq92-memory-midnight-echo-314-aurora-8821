@@ -13,7 +13,6 @@
             color: white;
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             padding: 40px 20px;
-            line-height: 1.8;
         }
 
         h1 {
@@ -21,15 +20,35 @@
             margin-bottom: 30px;
         }
 
-        .letter {
+        .letter-container {
             max-width: 600px;
             margin: auto;
+            background: #111;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+        }
+
+        .letter {
             font-size: 16px;
             color: #ddd;
+            line-height: 1.8;
+        }
+
+        .photo {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .photo img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(255, 77, 109, 0.4);
         }
 
         .signature {
-            margin-top: 40px;
+            margin-top: 30px;
             text-align: right;
             font-weight: bold;
             color: #ff4d6d;
@@ -57,7 +76,9 @@
 
     <h1>💌 Just For You</h1>
 
-    <div class="letter">
+    <div class="letter-container">
+
+        <div class="letter">
         I love you Minnu Mol<br>
 I love you more than any distance between us<br>
 I love you more than any flaws yousee in yourself<br>
@@ -67,8 +88,15 @@ You will always be my Kutty pathu and my Kunjikurutt<br>
 Your place in my heart, is irreplacable
     </div>
 
-    <div class="signature">
-        — Yours Always, Shittu Mani❤️
+        <!-- Romantic Photo -->
+        <div class="photo">
+            <img src="ltr.jpeg">
+        </div>
+
+        <div class="signature">
+            — Yours Always, Shittu Mani❤️
+        </div>
+
     </div>
 
     <button onclick="goBack()">Back</button>
